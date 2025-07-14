@@ -1,0 +1,358 @@
+commands:
+  - echo
+  - echo hello
+  - echo "hello"
+  - echo 'hello'
+  - echo hello world
+  - echo "hello world"
+  - echo 'hello world'
+  - echo 123
+  - echo "123"
+  - echo 'abc123'
+  - echo a b c d e
+  - echo "a b c d e"
+  - echo 'a b c d e'
+  - echo test
+  - echo TEST
+  - echo TeSt
+  - 'echo ''!@#$%^&*()'''
+  - 'echo "!@#$%^&*()"'
+  - echo 42
+  - echo -n
+  - echo -n hello
+  - echo -n "hello"
+  - echo -n 'hello'
+  - echo -n hello world
+  - echo -n "hello world"
+  - echo -n 'hello world'
+  - echo -n 123
+  - echo -n test
+  - echo -n TEST
+  - 'echo -n ''!@#$%'''
+  - 'echo -n ''"!@#$%"'''
+  - 'echo -n ''''''!@#$%'''''''
+  - echo -n a b c
+  - echo -n "a b c"
+  - echo -n 'a b c'
+  - echo -n -n hello
+  - echo -n -n -n test
+  - echo -n ""
+  - echo -n ''
+  - echo arg1 arg2 arg3
+  - echo "arg1" "arg2" "arg3"
+  - echo 'arg1' 'arg2' 'arg3'
+  - echo "arg1" arg2 'arg3'
+  - echo arg1 "arg2" arg3
+  - echo 'arg1' arg2 "arg3"
+  - echo one two three four five
+  - echo "one two" "three four" five
+  - echo 'one two' 'three four' 'five'
+  - echo 1 2 3 4 5 6 7 8 9 10
+  - echo "1 2 3" "4 5 6" "7 8 9"
+  - echo "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+  - echo hello world test case
+  - echo "hello world" "test case"
+  - echo 'hello world' 'test case'
+  - echo word1 word2 word3 word4 word5
+  - echo "word1 word2" "word3 word4" word5
+  - echo alpha beta gamma delta epsilon
+  - echo "alpha beta" gamma "delta epsilon"
+  - echo 'alpha beta' gamma 'delta epsilon'
+  - echo "hello\nworld"
+  - echo 'hello\nworld'
+  - echo "hello\tworld"
+  - echo 'hello\tworld'
+  - echo 'hello\"world'
+  - echo 'hello\$world'
+  - echo "\a\b\c\d\e\f"
+  - echo '\a\b\c\d\e\f'
+  - echo "\r\n\t\v\f"
+  - echo '\r\n\t\v\f'
+  - echo "\x41\x42\x43"
+  - echo '\x41\x42\x43'
+  - echo "\101\102\103"
+  - echo '\101\102\103'
+  - echo ""
+  - echo ''
+  - echo " "
+  - echo '  '
+  - echo "   "
+  - echo '    '
+  - echo "\t"
+  - echo '\t'
+  - echo "\n"
+  - echo '\n'
+  - echo " " " " " "
+  - echo '  ' '  ' '  '
+  - echo "" "" ""
+  - echo '' '' ''
+  - echo " hello "
+  - echo '  world  '
+  - echo "  test  case  "
+  - echo '   spaces   '
+  - echo ""hello""
+  - echo ''world''
+  - echo "hello'world"
+  - echo 'hello"world'
+  - echo "it's a test"
+  - echo 'he said "hello"'
+  - echo "she said 'hi'"
+  - echo 'the "quote" test'
+  - echo "mixed'quotes'test"
+  - echo 'mixed"quotes"test'
+  - echo "'single in double'"
+  - echo '"double in single"'
+  - echo "'"'"test"'"'"
+  - echo '"'"'test'"'"'
+  - echo "hello"world
+  - echo hello"world"
+  - echo 'hello'world
+  - echo hello'world'
+  - echo "hello"'world'
+  - echo 'hello'"world"
+  - echo test"case"test
+  - echo test'case'test
+  - echo $HOME
+  - echo "$HOME"
+  - echo '$HOME'
+  - echo $USER
+  - echo "$USER"
+  - echo '$USER'
+  - echo $PATH
+  - echo "$PATH"
+  - echo '$PATH'
+  - 'echo ${HOME}'
+  - 'echo "${HOME}"'
+  - 'echo ''${HOME}'''
+  - echo $HOME$USER
+  - echo "$HOME$USER"
+  - echo '$HOME$USER'
+  - 'echo ${HOME}${USER}'
+  - 'echo "${HOME}${USER}"'
+  - 'echo ''${HOME}${USER}'''
+  - echo $HOME/$USER
+  - echo "$HOME/$USER"
+  - echo -n $HOME
+  - echo -n "$HOME"
+  - echo -n '$HOME'
+  - echo -n hello $USER
+  - echo -n "hello $USER"
+  - echo -n 'hello $USER'
+  - echo -n hello world $HOME
+  - echo -n "hello world $HOME"
+  - echo -n 'hello world $HOME'
+  - echo -n test$HOME
+  - echo -n "test$HOME"
+  - echo -n 'test$HOME'
+  - 'echo -n ${HOME}test'
+  - 'echo -n "${HOME}test"'
+  - 'echo -n ''${HOME}test'''
+  - echo -n hello"world"test
+  - echo -n 'hello"world"test'
+  - echo -n "hello'world'test"
+  - echo -n hello world
+  - echo -
+  - echo --
+  - echo ---
+  - echo -n-
+  - echo -nn
+  - echo -nnn
+  - echo -n -
+  - echo -n --
+  - echo -x
+  - echo -nx
+  - echo -xn
+  - echo hello-n
+  - echo hello -n
+  - echo -n hello -n
+  - echo -n hello -n world
+  - echo $
+  - 'echo ${}'
+  - 'echo ${}test'
+  - echo - - - - - - - -
+  - echo -- -- -- -- --
+  - echo --- --- --- ---
+  - echo - -- --- ----
+  - echo ---- --- -- -
+  - echo -n -n -n -n -n
+  - echo -n - -n - -n - -n
+  - echo - -n - -n - -n -
+  - echo | cat -e
+  - echo hello | cat -e
+  - echo "hello" | cat -e
+  - echo 'hello' | cat -e
+  - echo hello world | cat -e
+  - echo "hello world" | cat -e
+  - echo 'hello world' | cat -e
+  - echo 123 | cat -e
+  - echo "123" | cat -e
+  - echo 'abc123' | cat -e
+  - echo a b c d e | cat -e
+  - echo "a b c d e" | cat -e
+  - echo 'a b c d e' | cat -e
+  - echo test | cat -e
+  - echo TEST | cat -e
+  - echo TeSt | cat -e
+  - 'echo ''!@#$%^&*()'' | cat -e'
+  - 'echo "!@#$%^&*()" | cat -e'
+  - echo 42 | cat -e
+  - echo -n | cat -e
+  - echo -n hello | cat -e
+  - echo -n "hello" | cat -e
+  - echo -n 'hello' | cat -e
+  - echo -n hello world | cat -e
+  - echo -n "hello world" | cat -e
+  - echo -n 'hello world' | cat -e
+  - echo -n 123 | cat -e
+  - echo -n test | cat -e
+  - echo -n TEST | cat -e
+  - 'echo -n ''!@#$%'' | cat -e'
+  - 'echo -n ''"!@#$%"'' | cat -e'
+  - 'echo -n ''''''!@#$%'''''' | cat -e'
+  - echo -n a b c | cat -e
+  - echo -n "a b c" | cat -e
+  - echo -n 'a b c' | cat -e
+  - echo -n -n hello | cat -e
+  - echo -n -n -n test | cat -e
+  - echo -n "" | cat -e
+  - echo -n '' | cat -e
+  - echo arg1 arg2 arg3 | cat -e
+  - echo "arg1" "arg2" "arg3" | cat -e
+  - echo 'arg1' 'arg2' 'arg3' | cat -e
+  - echo "arg1" arg2 'arg3' | cat -e
+  - echo arg1 "arg2" arg3 | cat -e
+  - echo 'arg1' arg2 "arg3" | cat -e
+  - echo one two three four five | cat -e
+  - echo "one two" "three four" five | cat -e
+  - echo 'one two' 'three four' 'five' | cat -e
+  - echo 1 2 3 4 5 6 7 8 9 10 | cat -e
+  - echo "1 2 3" "4 5 6" "7 8 9" | cat -e
+  - echo "a b c d e f g h i j k l m n o p q r s t u v w x y z" | cat -e
+  - echo hello world test case | cat -e
+  - echo "hello world" "test case" | cat -e
+  - echo 'hello world' 'test case' | cat -e
+  - echo word1 word2 word3 word4 word5 | cat -e
+  - echo "word1 word2" "word3 word4" word5 | cat -e
+  - echo alpha beta gamma delta epsilon | cat -e
+  - echo "alpha beta" gamma "delta epsilon" | cat -e
+  - echo 'alpha beta' gamma 'delta epsilon' | cat -e
+  - echo "hello\nworld" | cat -e
+  - echo 'hello\nworld' | cat -e
+  - echo "hello\tworld" | cat -e
+  - echo 'hello\tworld' | cat -e
+  - echo 'hello\"world' | cat -e
+  - echo 'hello\$world' | cat -e
+  - echo "\a\b\c\d\e\f" | cat -e
+  - echo '\a\b\c\d\e\f' | cat -e
+  - echo "\r\n\t\v\f" | cat -e
+  - echo '\r\n\t\v\f' | cat -e
+  - echo "\x41\x42\x43" | cat -e
+  - echo '\x41\x42\x43' | cat -e
+  - echo "\101\102\103" | cat -e
+  - echo '\101\102\103' | cat -e
+  - echo "" | cat -e
+  - echo '' | cat -e
+  - echo " " | cat -e
+  - echo '  ' | cat -e
+  - echo "   " | cat -e
+  - echo '    ' | cat -e
+  - echo "\t" | cat -e
+  - echo '\t' | cat -e
+  - echo "\n" | cat -e
+  - echo '\n' | cat -e
+  - echo " " " " " " | cat -e
+  - echo '  ' '  ' '  ' | cat -e
+  - echo "" "" "" | cat -e
+  - echo '' '' '' | cat -e
+  - echo " hello " | cat -e
+  - echo '  world  ' | cat -e
+  - echo "  test  case  " | cat -e
+  - echo '   spaces   ' | cat -e
+  - echo ""hello"" | cat -e
+  - echo ''world'' | cat -e
+  - echo "hello'world" | cat -e
+  - echo 'hello"world' | cat -e
+  - echo "it's a test" | cat -e
+  - echo 'he said "hello"' | cat -e
+  - echo "she said 'hi'" | cat -e
+  - echo 'the "quote" test' | cat -e
+  - echo "mixed'quotes'test" | cat -e
+  - echo 'mixed"quotes"test' | cat -e
+  - echo "'single in double'" | cat -e
+  - echo '"double in single"' | cat -e
+  - echo "'"'"test"'"'" | cat -e
+  - echo '"'"'test'"'"' | cat -e
+  - echo "hello"world | cat -e
+  - echo hello"world" | cat -e
+  - echo 'hello'world | cat -e
+  - echo hello'world' | cat -e
+  - echo "hello"'world' | cat -e
+  - echo 'hello'"world" | cat -e
+  - echo test"case"test | cat -e
+  - echo test'case'test | cat -e
+  - echo $HOME | cat -e
+  - echo "$HOME" | cat -e
+  - echo '$HOME' | cat -e
+  - echo $USER | cat -e
+  - echo "$USER" | cat -e
+  - echo '$USER' | cat -e
+  - echo $PATH | cat -e
+  - echo "$PATH" | cat -e
+  - echo '$PATH' | cat -e
+  - 'echo ${HOME} | cat -e'
+  - 'echo "${HOME}" | cat -e'
+  - 'echo ''${HOME}'' | cat -e'
+  - echo $HOME$USER | cat -e
+  - echo "$HOME$USER" | cat -e
+  - echo '$HOME$USER' | cat -e
+  - 'echo ${HOME}${USER} | cat -e'
+  - 'echo "${HOME}${USER}" | cat -e'
+  - 'echo ''${HOME}${USER}'' | cat -e'
+  - echo $HOME/$USER | cat -e
+  - echo "$HOME/$USER" | cat -e
+  - echo -n $HOME | cat -e
+  - echo -n "$HOME" | cat -e
+  - echo -n '$HOME' | cat -e
+  - echo -n hello $USER | cat -e
+  - echo -n "hello $USER" | cat -e
+  - echo -n 'hello $USER' | cat -e
+  - echo -n hello world $HOME | cat -e
+  - echo -n "hello world $HOME" | cat -e
+  - echo -n 'hello world $HOME' | cat -e
+  - echo -n test$HOME | cat -e
+  - echo -n "test$HOME" | cat -e
+  - echo -n 'test$HOME' | cat -e
+  - 'echo -n ${HOME}test | cat -e'
+  - 'echo -n "${HOME}test" | cat -e'
+  - 'echo -n ''${HOME}test'' | cat -e'
+  - echo -n hello"world"test | cat -e
+  - echo -n 'hello"world"test' | cat -e
+  - echo -n "hello'world'test" | cat -e
+  - echo -n hello world | cat -e
+  - echo - | cat -e
+  - echo -- | cat -e
+  - echo --- | cat -e
+  - echo -n- | cat -e
+  - echo -nn | cat -e
+  - echo -nnn | cat -e
+  - echo -n - | cat -e
+  - echo -n -- | cat -e
+  - echo -x | cat -e
+  - echo -nx | cat -e
+  - echo -xn | cat -e
+  - echo hello-n | cat -e
+  - echo hello -n | cat -e
+  - echo -n hello -n | cat -e
+  - echo -n hello -n world | cat -e
+  - echo $ | cat -e
+  - 'echo ${} | cat -e'
+  - 'echo ${}test | cat -e'
+  - echo - - - - - - - - | cat -e
+  - echo -- -- -- -- -- | cat -e
+  - echo --- --- --- --- | cat -e
+  - echo - -- --- ---- | cat -e
+  - echo ---- --- -- - | cat -e
+  - echo -n -n -n -n -n | cat -e
+  - echo -n - -n - -n - -n | cat -e
+  - echo - -n - -n - -n - | cat -e
+
