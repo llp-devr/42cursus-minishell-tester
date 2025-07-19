@@ -1,0 +1,141 @@
+commands:
+  - echo hello | cat
+  - echo world | cat -e
+  - pwd | cat
+  - ls | head -5
+  - echo test | wc -l
+  - echo multiple words | wc -w
+  - echo character count | wc -c
+  - whoami | cat
+  - echo piped | grep piped
+  - cat /etc/passwd | head -1
+  - cat /etc/passwd | tail -1
+  - cat /etc/passwd | head -5
+  - cat /etc/passwd | tail -5
+  - cat /etc/passwd | wc -l
+  - cat /etc/passwd | wc -w
+  - cat /etc/passwd | grep root
+  - cat /etc/passwd | grep bash
+  - head -10 /etc/passwd | tail -5
+  - cat /etc/passwd | head -3 | tail -1
+  - echo hello world | cat | cat
+  - echo test data | cat | wc -w
+  - echo multiple lines | cat | cat | cat
+  - pwd | cat | cat | wc -c
+  - echo chain test | cat | head -1 | cat
+  - ls | head -10 | tail -5 | cat
+  - cat /etc/passwd | head -5 | wc -l
+  - echo long chain | cat | cat | cat | wc -c
+  - cat /etc/passwd | grep root | wc -l
+  - cat /etc/passwd | head -20 | grep bash
+  - echo test | sort
+  - echo test | uniq
+  - echo test | sort
+  - echo test | uniq
+  - echo test | sort
+  - echo test data | awk '{print $1}'
+  - echo multiple words here | awk '{print $2}'
+  - echo one two three | awk '{print $3}'
+  - echo field test | awk '{print NF}'
+  - cat /etc/passwd | awk '{print NR, $0}' | head -3
+  - echo count me | awk '{print length($0)}'
+  - cat /etc/passwd | awk 'END {print NR}' | head -1
+  - cat /etc/passwd | grep root
+  - cat /etc/passwd | grep -v root
+  - cat /etc/passwd | grep bash
+  - cat /etc/passwd | grep -c root
+  - echo test line | grep test
+  - echo test line | grep line
+  - echo no match | grep xyz
+  - echo test | grep test
+  - cat /etc/passwd | grep ^root
+  - echo hello world | sed 's/hello/hi/'
+  - echo test string | sed 's/test/demo/'
+  - echo change line | sed 's/line/row/'
+  - echo remove this | sed 's/this//'
+  - echo numbers123 | sed 's/[0-9]//g'
+  - echo first second | sed 's/.*/modified/'
+  - cat /etc/passwd | sed '1d' | head -3
+  - cat /etc/passwd | sed '2d' | head -3
+  - echo substitute | sed 's/sub/SUPER/'
+  - echo test data here | sed 's/^/> /'
+  - echo axbxcxd | cut -dx -f1
+  - echo axbxcxd | cut -dx -f2
+  - echo axbxcxd | cut -dx -f1,3
+  - echo abcdef | cut -c1-3
+  - echo abcdef | cut -c4-
+  - cat /etc/passwd | cut -d':' -f1 | head -5
+  - echo space separated | cut -d' ' -f2
+  - echo field1,field2,field3 | cut -d, -f2
+  - cat /etc/passwd | cut -d':' -f1,3 | head -3
+  - cat /etc/passwd | grep bash | cut -d':' -f1
+  - cat /etc/passwd | head -10 | grep root | wc -l
+  - cat /etc/passwd | awk -F':' '{print $1}' | sort | head -5
+  - echo test data | cat | awk '{print $2}' | cat
+  - cat /etc/passwd | cut -d':' -f1 | grep root | cat
+  - echo b c a | tr ' ' '\n' | sort | head -2 | cat
+  - cat /etc/passwd | grep -v root | head -3 | wc -l
+  - echo count chars | cat | wc -c | cat
+  - cat /etc/passwd | tail -5 | head -3 | cut -d':' -f1
+  - echo line1 line2 line3 | cat | grep line | wc -w
+  - echo "hello world" | cat
+  - echo 'single quotes' | wc -w
+  - echo "pipe | inside quotes" | cat
+  - echo 'redirect > in quotes' | cat
+  - echo "multiple words here" | wc -l
+  - echo "special chars !@#" | cat
+  - echo 'mixed "quotes" here' | cat
+  - echo "tab here" | cat -e
+  - echo "preserve   spaces" | cat
+  - echo 'ampersand & here' | wc -c
+  - echo "" | cat
+  - echo "" | wc -l
+  - echo "" | wc -w
+  - echo "" | cat
+  - echo "" | wc -c
+  - echo | cat
+  - echo | wc -l
+  - echo | wc -l
+  - echo | wc -l
+  - echo -n test | wc -l
+  - cat /etc/passwd | head -20 | tail -10 | head -5 | wc -l
+  - echo test | cat | cat | cat | cat | wc -c
+  - cat /etc/passwd | grep bash | cut -d':' -f1 | sort | uniq
+  - echo a b a c | tr ' ' '\n' | sort | uniq | wc -l
+  - cat /etc/passwd | awk -F':' '{print $1}' | grep -v root | head -3
+  - echo data flow | cat | awk '{print $2}' | cat | cat
+  - cat /etc/passwd | head -50 | tail -25 | grep bash | wc -l
+  - echo test data more | cat | sort | cat | wc -w
+  - echo long chain test | cat | cat | awk '{print $3}' | cat
+  - cat /etc/passwd | cut -d':' -f1 | sort | head -10 | tail -5
+  - echo success | cat
+  - echo test | grep test
+  - echo test | grep nomatch
+  - echo test | grep test | cat
+  - echo test | grep nomatch | cat
+  - cat /etc/passwd | grep root | cat
+  - cat /etc/passwd | grep nonexistent | cat
+  - echo data | head -1 | cat
+  - echo data | tail -1 | cat
+  - printf "line1\nline2" | grep line1 | cat
+  - cat /etc/passwd | head -20 | tail -10 | wc -l
+  - echo line1 line2 line3 | cat
+  - echo line1 line2 line3 | head -1
+  - echo line1 line2 line3 | tail -1
+  - echo line1 line2 line3 | grep line
+  - echo line1 line2 line3 | wc -w
+  - echo c a b | tr ' ' '\n' | sort
+  - echo c a b | tr ' ' '\n' | sort | cat
+  - echo apple banana apple | tr ' ' '\n' | uniq
+  - echo 1 2 3 | awk '{sum+=$1+$2+$3} END {print sum}'
+  - echo word1 word2 word3 | wc -w
+  - cat /dev/null | cat
+  - cat /dev/null | wc -l
+  - echo test | cat /dev/stdin
+  - echo very long line with many words to test pipe buffer handling | cat
+  - seq 1 100 | head -10 | tail -5
+  - seq 1 1000 | wc -l
+  - yes | head -5 | cat | sort
+  - echo test | cat | cat | cat | cat | cat
+  - echo test | tee /dev/stderr | cat
+  - cat /etc/passwd | head -1000 | tail -100 | wc -l

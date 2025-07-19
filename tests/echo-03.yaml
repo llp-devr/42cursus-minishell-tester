@@ -1,0 +1,291 @@
+commands:
+ - echo a b c d e f g h i j | cat -e
+ - echo "a b c" d e f | cat -e
+ - echo a "b c d" e f | cat -e
+ - echo a b "c d e" f | cat -e
+ - echo a b c "d e f" | cat -e
+ - echo "a" "b" "c" "d" | cat -e
+ - echo 'a' 'b' 'c' 'd' | cat -e
+ - echo "a" 'b' "c" 'd' | cat -e
+ - echo "hello'world" | cat -e
+ - echo 'hello"world' | cat -e
+ - echo "It's a test" | cat -e
+ - echo 'He said "hello"' | cat -e
+ - echo $UNDEFINED_VAR | cat -e
+ - echo "$UNDEFINED_VAR" | cat -e
+ - echo '$UNDEFINED_VAR' | cat -e
+ - echo ${UNDEFINED_VAR} | cat -e
+ - echo "${UNDEFINED_VAR}" | cat -e
+ - echo '${UNDEFINED_VAR}' | cat -e
+ - echo $HOME$UNDEFINED_VAR | cat -e
+ - echo $UNDEFINED_VAR$HOME | cat -e
+ - echo ${HOME}${UNDEFINED_VAR} | cat -e
+ - echo ${UNDEFINED_VAR}${HOME} | cat -e
+ - echo =$HOME= | cat -e
+ - echo +$HOME+ | cat -e
+ - echo -$HOME- | cat -e
+ - echo *$HOME* | cat -e
+ - echo /$HOME/ | cat -e
+ - echo %$HOME% | cat -e
+ - echo ^$HOME^ | cat -e
+ - echo ~$HOME~ | cat -e
+ - echo @$HOME@ | cat -e
+ - echo [$HOME] | cat -e
+ - echo {$HOME} | cat -e
+ - echo "" | cat -e
+ - echo '' | cat -e
+ - echo " " | cat -e
+ - echo '   ' | cat -e
+ - echo " " | cat -e
+ - echo "" "" | cat -e
+ - echo '' '' | cat -e
+ - echo "" '' | cat -e
+ - echo '' "" | cat -e
+ - echo a "" b | cat -e
+ - echo a '' b | cat -e
+ - echo "" a "" | cat -e
+ - echo '' a '' | cat -e
+ - echo hello     world | cat -e
+ - echo "hello     world" | cat -e
+ - echo 'hello     world' | cat -e
+ - echo hello world | cat -e
+ - echo "hello world" | cat -e
+ - echo 'hello world' | cat -e
+ - echo hello   world | cat -e
+ - echo "hello   world" | cat -e
+ - echo 'hello   world' | cat -e
+ - echo 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789' | cat -e
+ - echo "!@#$%^*()_+-=[]{}|;:,.<>?" | cat -e
+ - echo '!@#$%^*()_+-=[]{}|;:,.<>?' | cat -e
+ - echo 1+1 | cat -e
+ - echo "1+1" | cat -e
+ - echo '1+1' | cat -e
+ - echo 2*3 | cat -e
+ - echo "2*3" | cat -e
+ - echo '2*3' | cat -e
+ - echo 10/2 | cat -e
+ - echo "10/2" | cat -e
+ - echo '10/2' | cat -e
+ - echo /usr/bin/echo | cat -e
+ - echo "/usr/bin/echo" | cat -e
+ - echo '/usr/bin/echo' | cat -e
+ - echo ./test | cat -e
+ - echo "./test" | cat -e
+ - echo './test' | cat -e
+ - echo ../test | cat -e
+ - echo "../test" | cat -e
+ - echo '../test' | cat -e
+ - echo "~/test" | cat -e
+ - echo '~/test' | cat -e
+ - echo user@domain.com | cat -e
+ - echo "user@domain.com" | cat -e
+ - echo 'user@domain.com' | cat -e
+ - echo http://example.com | cat -e
+ - echo "http://example.com" | cat -e
+ - echo 'http://example.com' | cat -e
+ - echo https://www.test.org | cat -e
+ - echo "https://www.test.org" | cat -e
+ - echo 'https://www.test.org' | cat -e
+ - echo 2024-01-15 | cat -e
+ - echo "2024-01-15" | cat -e
+ - echo '2024-01-15' | cat -e
+ - echo 14:30:45 | cat -e
+ - echo "14:30:45" | cat -e
+ - echo '14:30:45' | cat -e
+ - echo "Jan 15, 2024" | cat -e
+ - echo 'Jan 15, 2024' | cat -e
+ - echo test.txt | cat -e
+ - echo "test.txt" | cat -e
+ - echo 'test.txt' | cat -e
+ - echo script.sh | cat -e
+ - echo "script.sh" | cat -e
+ - echo 'script.sh' | cat -e
+ - echo program.c | cat -e
+ - echo "program.c" | cat -e
+ - echo 'program.c' | cat -e
+ - echo $HOME $USER $PATH | cat -e
+ - echo "$HOME $USER $PATH" | cat -e
+ - echo '$HOME $USER $PATH' | cat -e
+ - echo ${HOME} ${USER} ${PATH} | cat -e
+ - echo "${HOME} ${USER} ${PATH}" | cat -e
+ - echo '${HOME} ${USER} ${PATH}' | cat -e
+ - echo "User $USER lives in $HOME" | cat -e
+ - echo 'User $USER lives in $HOME' | cat -e
+ - echo "PATH contains - $PATH directories" | cat -e
+ - echo 'PATH contains - $PATH directories' | cat -e
+ - echo "Hello $USER, welcome to $HOME directory" | cat -e
+ - echo 'Hello $USER, welcome to $HOME directory' | cat -e
+ - echo -n hello | cat -e
+ - echo -n "hello" | cat -e
+ - echo -n 'hello' | cat -e
+ - echo -n hello world | cat -e
+ - echo -n "hello world" | cat -e
+ - echo -n 'hello world' | cat -e
+ - echo -n | cat -e
+ - echo -n "" | cat -e
+ - echo -n '' | cat -e
+ - echo hello | cat | cat -e
+ - echo "hello world" | cat | cat -e
+ - echo 'hello world' | cat | cat -e
+ - echo hello | cat -n | cat -e
+ - echo hello world | wc -w | cat -e
+ - echo "hello world test" | wc -w | cat -e
+ - echo 'one two three four' | wc -w | cat -e
+ - echo "café" | cat -e
+ - echo 'café' | cat -e
+ - echo "naïve" | cat -e
+ - echo 'naïve' | cat -e
+ - echo "résumé" | cat -e
+ - echo 'résumé' | cat -e
+ - echo hello > /dev/null
+ - echo hello >> /dev/null
+ - echo hello > /dev/null
+ - echo hello < /dev/null
+ - echo hello | cat > /dev/null
+ - echo hello | cat >> /dev/null
+ - echo a b c d e f g h i j k l m n o p q r s t u v w x y z | cat -e
+ - echo 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 | cat -e
+ - echo "arg1" "arg2" "arg3" "arg4" "arg5" "arg6" "arg7" "arg8" | cat -e
+ - echo $PWD | cat -e
+ - echo "$PWD" | cat -e
+ - echo '$PWD' | cat -e
+ - echo $OLDPWD | cat -e
+ - echo "$OLDPWD" | cat -e
+ - echo '$OLDPWD' | cat -e
+ - echo hello && echo world
+ - echo "hello" && echo "world"
+ - echo 'hello' && echo 'world'
+ - echo hello && echo world | cat -e
+ - echo "test1" && echo "test2" | cat -e
+ - echo 'first' && echo 'second' | cat -e
+ - echo success && echo "command executed"
+ - echo "first command" && echo second command
+ - echo hello && echo world && echo !
+ - echo "step1" && echo "step2" && echo "step3"
+ - echo 'a' && echo 'b' && echo 'c'
+ - echo $HOME && echo $USER
+ - echo "$HOME" && echo "$USER"
+ - echo '$HOME' && echo '$USER'
+ - echo ${HOME} && echo ${USER}
+ - echo "${HOME}" && echo "${USER}"
+ - echo '${HOME}' && echo '${USER}'
+ - echo hello && echo world && echo $USER
+ - echo 'test' && echo "with quotes" && echo 'mixed'
+ - echo hello || echo world
+ - echo "hello" || echo "world"
+ - echo 'hello' || echo 'world'
+ - echo hello || echo world | cat -e
+ - echo "test1" || echo "test2" | cat -e
+ - echo 'first' || echo 'second' | cat -e
+ - echo success || echo "fallback command"
+ - echo "primary" || echo secondary command
+ - echo hello || echo world || echo !
+ - echo "option1" || echo "option2" || echo "option3"
+ - echo 'a' || echo 'b' || echo 'c'
+ - echo $HOME || echo $USER
+ - echo "$HOME" || echo "$USER"
+ - echo '$HOME' || echo '$USER'
+ - echo ${HOME} || echo ${USER}
+ - echo "${HOME}" || echo "${USER}"
+ - echo '${HOME}' || echo '${USER}'
+ - echo hello || echo world || echo $USER
+ - echo 'test' || echo "with quotes" || echo 'mixed'
+ - echo hello && echo world || echo fallback
+ - echo "test1" && echo "test2" || echo "test3"
+ - echo 'first' && echo 'second' || echo 'third'
+ - echo hello || echo world && echo end
+ - echo "primary" || echo "secondary" && echo "final"
+ - echo 'a' || echo 'b' && echo 'c'
+ - echo $HOME && echo $USER || echo "no vars"
+ - echo "$HOME" && echo "$USER" || echo "fallback"
+ - echo hello && echo world || echo ! && echo done
+ - echo "step1" || echo "step2" && echo "step3" || echo "step4"
+ - echo hello ; echo world
+ - echo "hello" ; echo "world"
+ - echo 'hello' ; echo 'world'
+ - echo hello ; echo world | cat -e
+ - echo "test1" ; echo "test2" | cat -e
+ - echo 'first' ; echo 'second' | cat -e
+ - echo command1 ; echo command2
+ - echo "sequential" ; echo execution
+ - echo hello ; echo world ; echo !
+ - echo "cmd1" ; echo "cmd2" ; echo "cmd3"
+ - echo 'a' ; echo 'b' ; echo 'c'
+ - echo $HOME ; echo $USER
+ - echo "$HOME" ; echo "$USER"
+ - echo '$HOME' ; echo '$USER'
+ - echo ${HOME} ; echo ${USER}
+ - echo "${HOME}" ; echo "${USER}"
+ - echo '${HOME}' ; echo '${USER}'
+ - echo hello ; echo world ; echo $USER
+ - echo 'test' ; echo "with quotes" ; echo 'mixed'
+ - echo hello ; echo world && echo success
+ - echo "test1" ; echo "test2" && echo "test3"
+ - echo 'first' ; echo 'second' && echo 'third'
+ - echo hello ; echo world || echo fallback
+ - echo "primary" ; echo "secondary" || echo "backup"
+ - echo 'a' ; echo 'b' || echo 'c'
+ - echo hello && echo world ; echo done
+ - echo "step1" && echo "step2" ; echo "final"
+ - echo 'first' && echo 'second' ; echo 'last'
+ - echo hello || echo world ; echo end
+ - echo "option1" || echo "option2" ; echo "conclusion"
+ - echo 'a' || echo 'b' ; echo 'c'
+ - echo start ; echo middle && echo end
+ - echo "begin" ; echo "process" && echo "finish"
+ - echo 'init' ; echo 'work' && echo 'complete'
+ - echo hello ; echo world || echo backup ; echo final
+ - echo "cmd1" ; echo "cmd2" || echo "cmd3" ; echo "cmd4"
+ - echo 'a' ; echo 'b' || echo 'c' ; echo 'd'
+ - echo hello && echo world ; echo test || echo fallback
+ - echo "success" && echo "continue" ; echo "try" || echo "fail"
+ - echo 'good' && echo 'next' ; echo 'attempt' || echo 'error'
+ - echo $HOME ; echo $USER && echo $SHELL
+ - echo "$HOME" ; echo "$USER" && echo "$SHELL"
+ - echo '$HOME' ; echo '$USER' && echo '$SHELL'
+ - echo ${HOME} ; echo ${USER} || echo ${SHELL}
+ - echo "${HOME}" ; echo "${USER}" || echo "${SHELL}"
+ - echo '${HOME}' ; echo '${USER}' || echo '${SHELL}'
+ - echo hello | cat -e ; echo world
+ - echo "test1" | cat -e ; echo "test2"
+ - echo 'first' | cat -e ; echo 'second'
+ - echo hello | cat -e && echo world
+ - echo "success" | cat -e && echo "continue"
+ - echo 'good' | cat -e && echo 'next'
+ - echo hello | cat -e || echo world
+ - echo "primary" | cat -e || echo "backup"
+ - echo 'main' | cat -e || echo 'alternative'
+ - echo a ; echo b && echo c || echo d
+ - echo "1" ; echo "2" && echo "3" || echo "4"
+ - echo 'w' ; echo 'x' && echo 'y' || echo 'z'
+ - echo start && echo middle ; echo end || echo error
+ - echo "begin" && echo "process" ; echo "finish" || echo "fail"
+ - echo 'init' && echo 'work' ; echo 'done' || echo 'problem'
+ - echo hello || echo world ; echo test && echo success
+ - echo "option1" || echo "option2" ; echo "check" && echo "ok"
+ - echo 'a' || echo 'b' ; echo 'c' && echo 'd'
+ - echo hello > /dev/null && echo world
+ - echo "test1" > /dev/null && echo "test2"
+ - echo 'first' > /dev/null && echo 'second'
+ - echo hello > /dev/null || echo world
+ - echo "primary" > /dev/null || echo "backup"
+ - echo 'main' > /dev/null || echo 'alternative'
+ - echo hello > /dev/null ; echo world
+ - echo "sequential1" > /dev/null ; echo "sequential2"
+ - echo 'cmd1' > /dev/null ; echo 'cmd2'
+ - echo "" && echo "after empty"
+ - echo '' && echo 'after empty'
+ - echo "" || echo "fallback"
+ - echo '' || echo 'fallback'
+ - echo "" ; echo "after empty"
+ - echo '' ; echo 'after empty'
+ - echo 1 && echo 2
+ - echo "1" && echo "2"
+ - echo '1' && echo '2'
+ - echo 1 || echo 2
+ - echo "1" || echo "2"
+ - echo '1' || echo '2'
+ - echo 1 ; echo 2
+ - echo "1" ; echo "2"
+ - echo '1' ; echo '2'
+ - echo 1 && echo 2 || echo 3 ; echo 4

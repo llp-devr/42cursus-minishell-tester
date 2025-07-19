@@ -1,0 +1,50 @@
+commands:
+ - echo ${}
+ - echo ${   }
+ - echo ${ }
+ - echo $VAR}
+ - echo ${VAR +}
+ - echo ${VAR -}
+ - echo ${VAR *}
+ - echo ${VAR /}
+ - echo ${VAR %}
+ - "echo ${VAR #}"
+ - echo ${VAR @}
+ - echo ${VAR &}
+ - echo ${VAR |}
+ - echo ${VAR <}
+ - echo ${VAR >}
+ - echo ${VAR =}
+ - echo ${VAR ^}
+ - echo ${VAR ~}
+ - echo ${1VAR}
+ - echo ${VAR.NAME}
+ - echo ${VAR NAME}
+ - "echo ${VAR	NAME}"
+ - echo ${VAR*NAME}
+ - echo ${VAR&NAME}
+ - echo ${VAR|NAME}
+ - echo ${VAR<NAME}
+ - echo ${VAR>NAME}
+ - echo ${{HOME}}
+ - echo ${${HOME}}
+ - echo ${HOME${USER}}
+ - echo ${}${HOME}
+ - echo ${HOME ${USER}}
+ - echo ${HOME} ${}
+ - echo | | echo
+ - echo hello >>
+ - echo hello <
+ - echo hello >
+ - echo hello < <
+ - echo hello > >
+ - echo hello >>
+ - echo hello <<
+ - echo hello < <<
+ - echo hello > < file
+ - echo hello < > file
+ - echo hello | |
+ - echo | echo hello
+ - echo hello | | cat
+ - echo hello ||| cat
+ - echo | | echo hello

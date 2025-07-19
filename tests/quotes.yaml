@@ -1,0 +1,104 @@
+commands:
+- echo 'hello world'
+- echo 'hello    world'
+- echo 'hello    world'
+- echo '$USER is not expanded'
+- echo '* ? [ ] { } are literal'
+- echo '; | & < > are literal'
+- echo 'quotes inside "double quotes"'
+- awk 'BEGIN { print "hello world" }'
+- awk 'BEGIN { print "line1\nline2" }'
+- awk '{print $1 " " $2}' /etc/passwd
+- echo "hello    world"
+- echo "hello    world"
+- echo "quotes inside 'single quotes'"
+- echo "semicolon ; pipe | ampersand &"
+- echo "redirections < > are literal"
+- echo "asterisk * question ? brackets []"
+- awk "BEGIN { print 'hello world' }"
+- awk "BEGIN { print 'tabthere' }"
+- grep "pattern with spaces" /etc/passwd
+- echo 'single'double'mixed'
+- echo "double"single"mixed"
+- echo 'start single'"end double"
+- echo "start double"'end single'
+- echo a'quoted'b"quoted"c
+- echo 'multi word string'"another string"
+- awk 'BEGIN'"{ print 'mixed' }"
+- grep 'pattern'"in file" /etc/passwd
+- wc -l 'file with'"spaces.txt"
+- echo 'first'"second"'third'"fourth"
+- echo ""
+- echo '' ''
+- echo "" ""
+- echo 'a' '' 'b'
+- echo "x" "" "y"
+- awk 'BEGIN { print "" }'
+- grep '' /etc/passwd
+- echo ' '
+- echo "    "
+- echo 'pipe | here' | cat
+- echo "pipe | here" | wc -w
+- echo 'redirect > here' | cat
+- echo "redirect < here" | cat
+- awk 'BEGIN { print "pipe | test" }' | head -1
+- grep 'search | term' /etc/passwd | wc -l
+- echo 'command1 ; command2' | cat
+- echo "ampersand & here" | wc -c
+- cat /dev/null | echo 'after pipe'
+- grep 'root user' /etc/passwd
+- grep "system account" /etc/passwd
+- grep '^root:' /etc/passwd
+- grep '[0-9]' /etc/passwd
+- grep 'bash' /etc/passwd
+- grep "home directory" /etc/passwd
+- grep '.*:.*:' /etc/passwd
+- grep "pattern with spaces and punctuation!" /etc/passwd
+- grep 'case sensitive' /etc/passwd
+- grep "Case Sensitive" /etc/passwd
+- echo 'word count test' | wc -w
+- echo "line count test" | wc -l
+- echo 'character count' | wc -c
+- echo 'multiple words here' | wc
+- wc -l '/etc/passwd'
+- wc -w "/etc/passwd"
+- echo 'first line' | wc -l
+- echo "second line" | wc -c
+- printf 'no newline' | wc -l
+- printf "with newline\n" | wc -l
+- echo 'cat this content' | cat
+- echo "display this text" | cat
+- echo 'line 1' | cat -n
+- echo "line with tab    here" | cat -e
+- echo 'show line endings' | cat -e
+- printf 'multiple\nlines\nhere' | cat -n
+- echo "test file content" | cat -b
+- echo 'empty line follows' | cat
+- printf "no final newline" | cat -e
+- echo 'numbered lines' | cat -n
+- echo 'first line only' | head -1
+- echo "top line" | head -n 1
+- printf 'line1\nline2\nline3' | head -2
+- echo 'show first' | head
+- head -1 '/etc/passwd'
+- head -n 5 "/etc/passwd"
+- printf 'multiple\nlines\nfor\nhead' | head -3
+- echo 'single line' | tail -1
+- printf 'line1\nline2\nlast' | tail -1
+- tail -n 1 '/etc/passwd'
+- awk 'BEGIN { print "He said 'hello'" }'
+- echo 'She replied "goodbye"'
+- echo "He asked 'why?'"
+- grep 'pattern "with quotes"' /etc/passwd
+- echo 'command with "nested quotes" inside'
+- echo "String with 'single quotes' embedded"
+- grep "line with 'quotes'" /etc/passwd
+- echo 'special chars !@#$%^&*()'
+- echo "more special []{}()<>?"
+- echo 'path/with/slashes'
+- echo "path\with\backslashes"
+- awk 'BEGIN { print "symbols ~`+=|" }'
+- echo 'math 2+2=4'
+- echo "comparison a<b>c"
+- grep '[a-z]*' /etc/passwd
+- echo 'percent%sign and dollar$sign'

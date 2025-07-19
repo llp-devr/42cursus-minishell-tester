@@ -1,0 +1,288 @@
+commands:
+ - echo | cat -e
+ - echo hello | cat -e
+ - echo "hello" | cat -e
+ - echo 'hello' | cat -e
+ - echo hello world | cat -e
+ - echo "hello world" | cat -e
+ - echo 'hello world' | cat -e
+ - echo test | cat -e
+ - echo "test" | cat -e
+ - echo 'test' | cat -e
+ - echo 42 | cat -e
+ - echo "42" | cat -e
+ - echo '42' | cat -e
+ - echo school | cat -e
+ - echo "school" | cat -e
+ - echo 'school' | cat -e
+ - echo minishell | cat -e
+ - echo "minishell" | cat -e
+ - echo 'minishell' | cat -e
+ - echo a | cat -e
+ - echo "a" | cat -e
+ - echo 'a' | cat -e
+ - echo abc | cat -e
+ - echo "abc" | cat -e
+ - echo 'abc' | cat -e
+ - echo 123 | cat -e
+ - echo "123" | cat -e
+ - echo '123' | cat -e
+ - echo hello 42 | cat -e
+ - echo "hello 42" | cat -e
+ - echo 'hello 42' | cat -e
+ - echo test case | cat -e
+ - echo "test case" | cat -e
+ - echo 'test case' | cat -e
+ - echo one two three | cat -e
+ - echo "one two three" | cat -e
+ - echo 'one two three' | cat -e
+ - echo programming | cat -e
+ - echo "programming" | cat -e
+ - echo 'programming' | cat -e
+ - echo shell | cat -e
+ - echo "shell" | cat -e
+ - echo 'shell' | cat -e
+ - echo bash | cat -e
+ - echo "bash" | cat -e
+ - echo 'bash' | cat -e
+ - echo terminal | cat -e
+ - echo "terminal" | cat -e
+ - echo 'terminal' | cat -e
+ - echo command | cat -e
+ - echo "command" | cat -e
+ - echo 'command' | cat -e
+ - echo hello! | cat -e
+ - echo "hello!" | cat -e
+ - echo 'hello!' | cat -e
+ - echo @test | cat -e
+ - echo "@test" | cat -e
+ - echo '@test' | cat -e
+ - echo #comment | cat -e
+ - echo "#comment" | cat -e
+ - echo '#comment' | cat -e
+ - echo $variable | cat -e
+ - echo "$variable" | cat -e
+ - echo '$variable' | cat -e
+ - echo %percent | cat -e
+ - echo "%percent" | cat -e
+ - echo '%percent' | cat -e
+ - echo ^caret | cat -e
+ - echo "^caret" | cat -e
+ - echo '^caret' | cat -e
+ - echo "&ampersand" | cat -e
+ - echo '&ampersand' | cat -e
+ - echo *asterisk | cat -e
+ - echo "*asterisk" | cat -e
+ - echo '*asterisk' | cat -e
+ - echo "(parenthesis)" | cat -e
+ - echo '(parenthesis)' | cat -e
+ - echo -dash | cat -e
+ - echo "-dash" | cat -e
+ - echo '-dash' | cat -e
+ - echo _underscore | cat -e
+ - echo "_underscore" | cat -e
+ - echo '_underscore' | cat -e
+ - echo +plus | cat -e
+ - echo "+plus" | cat -e
+ - echo '+plus' | cat -e
+ - echo =equal | cat -e
+ - echo "=equal" | cat -e
+ - echo '=equal' | cat -e
+ - echo [bracket] | cat -e
+ - echo "[bracket]" | cat -e
+ - echo '[bracket]' | cat -e
+ - echo {brace} | cat -e
+ - echo "{brace}" | cat -e
+ - echo '{brace}' | cat -e
+ - echo "|pipe" | cat -e
+ - echo '|pipe' | cat -e
+ - echo 0 | cat -e
+ - echo "0" | cat -e
+ - echo '0' | cat -e
+ - echo 1234567890 | cat -e
+ - echo "1234567890" | cat -e
+ - echo '1234567890' | cat -e
+ - echo -123 | cat -e
+ - echo "-123" | cat -e
+ - echo '-123' | cat -e
+ - echo +456 | cat -e
+ - echo "+456" | cat -e
+ - echo '+456' | cat -e
+ - echo 3.14 | cat -e
+ - echo "3.14" | cat -e
+ - echo '3.14' | cat -e
+ - echo hello123 | cat -e
+ - echo "hello123" | cat -e
+ - echo 'hello123' | cat -e
+ - echo 123hello | cat -e
+ - echo "123hello" | cat -e
+ - echo '123hello' | cat -e
+ - echo test42school | cat -e
+ - echo "test42school" | cat -e
+ - echo 'test42school' | cat -e
+ - echo hello world 123 | cat -e
+ - echo "hello world 123" | cat -e
+ - echo 'hello world 123' | cat -e
+ - echo 123 hello world | cat -e
+ - echo "123 hello world" | cat -e
+ - echo '123 hello world' | cat -e
+ - echo hello 123 world | cat -e
+ - echo "hello 123 world" | cat -e
+ - echo 'hello 123 world' | cat -e
+ - echo a1b2c3 | cat -e
+ - echo "a1b2c3" | cat -e
+ - echo 'a1b2c3' | cat -e
+ - echo 1a2b3c | cat -e
+ - echo "1a2b3c" | cat -e
+ - echo '1a2b3c' | cat -e
+ - echo test_123 | cat -e
+ - echo "test_123" | cat -e
+ - echo 'test_123' | cat -e
+ - echo 123_test | cat -e
+ - echo "123_test" | cat -e
+ - echo '123_test' | cat -e
+ - echo hello-world | cat -e
+ - echo "hello-world" | cat -e
+ - echo 'hello-world' | cat -e
+ - echo test.file | cat -e
+ - echo "test.file" | cat -e
+ - echo 'test.file' | cat -e
+ - echo "  hello  " | cat -e
+ - echo '  hello  ' | cat -e
+ - echo "hello  world" | cat -e
+ - echo 'hello  world' | cat -e
+ - echo "  hello  world  " | cat -e
+ - echo '  hello  world  ' | cat -e
+ - echo " hello world " | cat -e
+ - echo ' hello world ' | cat -e
+ - echo "The quick brown fox" | cat -e
+ - echo 'The quick brown fox' | cat -e
+ - echo "jumps over the lazy dog" | cat -e
+ - echo 'jumps over the lazy dog' | cat -e
+ - echo "Hello, World!" | cat -e
+ - echo 'Hello, World!' | cat -e
+ - echo "Welcome to 42 School" | cat -e
+ - echo 'Welcome to 42 School' | cat -e
+ - echo "Minishell project" | cat -e
+ - echo 'Minishell project' | cat -e
+ - echo "This is a test" | cat -e
+ - echo 'This is a test' | cat -e
+ - echo "Multiple words here" | cat -e
+ - echo 'Multiple words here' | cat -e
+ - echo "Testing echo command" | cat -e
+ - echo 'Testing echo command' | cat -e
+ - echo "End of basic tests" | cat -e
+ - echo 'End of basic tests' | cat -e
+ - echo "Final test case" | cat -e
+ - echo 'Final test case' | cat -e
+ - echo "Almost done" | cat -e
+ - echo 'Almost done' | cat -e
+ - echo "Last few tests" | cat -e
+ - echo 'Last few tests' | cat -e
+ - echo "Success cases" | cat -e
+ - echo 'Success cases' | cat -e
+ - echo "Minishell testing" | cat -e
+ - echo 'Minishell testing' | cat -e
+ - echo "Complete test suite" | cat -e
+ - echo 'Complete test suite' | cat -e
+ - echo "Test case 200" | cat -e
+ - echo $HOME | cat -e
+ - echo "$HOME" | cat -e
+ - echo '$HOME' | cat -e
+ - echo $USER | cat -e
+ - echo "$USER" | cat -e
+ - echo '$USER' | cat -e
+ - echo $PATH | cat -e
+ - echo "$PATH" | cat -e
+ - echo '$PATH' | cat -e
+ - echo ${HOME} | cat -e
+ - echo "${HOME}" | cat -e
+ - echo '${HOME}' | cat -e
+ - echo ${USER} | cat -e
+ - echo "${USER}" | cat -e
+ - echo '${USER}' | cat -e
+ - echo ${PATH} | cat -e
+ - echo "${PATH}" | cat -e
+ - echo '${PATH}' | cat -e
+ - echo Hello $HOME | cat -e
+ - echo "Hello $HOME" | cat -e
+ - echo 'Hello $HOME' | cat -e
+ - echo Hello $USER | cat -e
+ - echo "Hello $USER" | cat -e
+ - echo 'Hello $USER' | cat -e
+ - echo Hello $PATH | cat -e
+ - echo "Hello $PATH" | cat -e
+ - echo 'Hello $PATH' | cat -e
+ - echo Hello ${HOME} | cat -e
+ - echo "Hello ${HOME}" | cat -e
+ - echo 'Hello ${HOME}' | cat -e
+ - echo Hello ${USER} | cat -e
+ - echo "Hello ${USER}" | cat -e
+ - echo 'Hello ${USER}' | cat -e
+ - echo Hello ${PATH} | cat -e
+ - echo "Hello ${PATH}" | cat -e
+ - echo 'Hello ${PATH}' | cat -e
+ - echo $HOME world | cat -e
+ - echo "$HOME world" | cat -e
+ - echo '$HOME world' | cat -e
+ - echo $USER world | cat -e
+ - echo "$USER world" | cat -e
+ - echo '$USER world' | cat -e
+ - echo $PATH world | cat -e
+ - echo "$PATH world" | cat -e
+ - echo '$PATH world' | cat -e
+ - echo ${HOME} world | cat -e
+ - echo "${HOME} world" | cat -e
+ - echo '${HOME} world' | cat -e
+ - echo ${USER} world | cat -e
+ - echo "${USER} world" | cat -e
+ - echo '${USER} world' | cat -e
+ - echo ${PATH} world | cat -e
+ - echo "${PATH} world" | cat -e
+ - echo '${PATH} world' | cat -e
+ - echo $HOME$USER | cat -e
+ - echo "$HOME$USER" | cat -e
+ - echo '$HOME$USER' | cat -e
+ - echo ${HOME}${USER} | cat -e
+ - echo "${HOME}${USER}" | cat -e
+ - echo '${HOME}${USER}' | cat -e
+ - echo $HOME/$USER | cat -e
+ - echo "$HOME/$USER" | cat -e
+ - echo '$HOME/$USER' | cat -e
+ - echo ${HOME}/${USER} | cat -e
+ - echo "${HOME}/${USER}" | cat -e
+ - echo '${HOME}/${USER}' | cat -e
+ - echo Welcome $HOME | cat -e
+ - echo "Welcome $HOME" | cat -e
+ - echo 'Welcome $HOME' | cat -e
+ - echo Welcome $USER | cat -e
+ - echo "Welcome $USER" | cat -e
+ - echo 'Welcome $USER' | cat -e
+ - echo Welcome ${HOME} | cat -e
+ - echo "Welcome ${HOME}" | cat -e
+ - echo 'Welcome ${HOME}' | cat -e
+ - echo Welcome ${USER} | cat -e
+ - echo "Welcome ${USER}" | cat -e
+ - echo 'Welcome ${USER}' | cat -e
+ - echo $HOME is home | cat -e
+ - echo "$HOME is home" | cat -e
+ - echo '$HOME is home' | cat -e
+ - echo $USER is user | cat -e
+ - echo "$USER is user" | cat -e
+ - echo '$USER is user' | cat -e
+ - echo ${HOME} is home | cat -e
+ - echo "${HOME} is home" | cat -e
+ - echo '${HOME} is home' | cat -e
+ - echo ${USER} is user | cat -e
+ - echo "${USER} is user" | cat -e
+ - echo '${USER} is user' | cat -e
+ - "echo Home: $HOME | cat -e"
+ - "echo \"Home: $HOME\" | cat -e"
+ - "echo 'Home: $HOME' | cat -e"
+ - "echo User: $USER | cat -e"
+ - "echo \"User: $USER\" | cat -e"
+ - "echo 'User: $USER' | cat -e"
+ - "echo Path: $PATH | cat -e"
+ - "echo \"Path: $PATH\" | cat -e"
+ - "echo 'Path: $PATH' | cat -e"
+ - echo "Current user is $USER at $HOME" | cat -e

@@ -1,0 +1,220 @@
+commands:
+  - /bin/true
+  - /bin/false
+  - /usr/bin/true
+  - /usr/bin/false
+  - /bin/echo hello
+  - /bin/echo "hello world"
+  - /bin/echo 'single quotes'
+  - /bin/echo hello world test
+  - /bin/echo -n hello
+  - /bin/echo -n "no newline"
+  - /bin/echo -e "escape sequences"
+  - /bin/echo ""
+  - /bin/echo ''
+  - /bin/echo -n ""
+  - /bin/cat /etc/passwd
+  - /bin/cat /etc/hosts
+  - /bin/cat /dev/null
+  - /bin/cat -n /etc/passwd
+  - /bin/cat -b /etc/passwd
+  - /bin/cat -e /etc/passwd
+  - /bin/cat -v /etc/passwd
+  - /bin/cat -A /etc/passwd
+  - /bin/cat -s /etc/passwd
+  - /bin/cat -T /etc/passwd
+  - /bin/ls
+  - /bin/ls /etc
+  - /bin/ls /usr
+  - /bin/ls /home
+  - /bin/ls -l
+  - /bin/ls -a
+  - /bin/ls -la
+  - /bin/ls -l /etc
+  - /bin/ls -a /etc
+  - /bin/ls -la /etc
+  - /bin/ls -1
+  - /bin/ls -1 /etc
+  - /bin/ls -R /etc
+  - /bin/ls -t /etc
+  - /bin/ls -r /etc
+  - /bin/ls -S /etc
+  - /bin/ls -h /etc
+  - /bin/ls -d /etc
+  - /bin/ls -i /etc
+  - /bin/ls -F /etc
+  - /bin/pwd
+  - /bin/pwd -L
+  - /bin/pwd -P
+  - /usr/bin/whoami
+  - /usr/bin/id
+  - /usr/bin/id -u
+  - /usr/bin/id -g
+  - /usr/bin/id -un
+  - /usr/bin/id -gn
+  - /usr/bin/id -r
+  - /usr/bin/id -G
+  - /bin/date +%Y
+  - /bin/date +%m
+  - /bin/date +%d
+  - /bin/date +%H
+  - /bin/date +%M
+  - /bin/date +%Y-%m-%d
+  - /bin/date -u
+  - /bin/date -R
+  - /bin/date -I
+  - /usr/bin/uname
+  - /usr/bin/uname -s
+  - /usr/bin/uname -n
+  - /usr/bin/uname -r
+  - /usr/bin/uname -v
+  - /usr/bin/uname -m
+  - /usr/bin/uname -p
+  - /usr/bin/uname -i
+  - /usr/bin/uname -o
+  - /usr/bin/uname -a
+  - /usr/bin/wc /etc/passwd
+  - /usr/bin/wc -l /etc/passwd
+  - /usr/bin/wc -w /etc/passwd
+  - /usr/bin/wc -c /etc/passwd
+  - /usr/bin/wc -m /etc/passwd
+  - /usr/bin/wc -L /etc/passwd
+  - /usr/bin/wc -l /etc/hosts
+  - /usr/bin/wc -w /etc/hosts
+  - /usr/bin/wc -c /etc/hosts
+  - /usr/bin/head /etc/passwd
+  - /usr/bin/head -n 5 /etc/passwd
+  - /usr/bin/head -5 /etc/passwd
+  - /usr/bin/head -n 1 /etc/passwd
+  - /usr/bin/head -1 /etc/passwd
+  - /usr/bin/head -n 10 /etc/passwd
+  - /usr/bin/head -c 100 /etc/passwd
+  - /usr/bin/head -c 50 /etc/passwd
+  - /usr/bin/head -q /etc/passwd
+  - /usr/bin/head -v /etc/passwd
+  - /usr/bin/tail /etc/passwd
+  - /usr/bin/tail -n 5 /etc/passwd
+  - /usr/bin/tail -5 /etc/passwd
+  - /usr/bin/tail -n 1 /etc/passwd
+  - /usr/bin/tail -1 /etc/passwd
+  - /usr/bin/tail -n 10 /etc/passwd
+  - /usr/bin/tail -c 100 /etc/passwd
+  - /usr/bin/tail -c 50 /etc/passwd
+  - /usr/bin/tail -q /etc/passwd
+  - /usr/bin/tail -v /etc/passwd
+  - /usr/bin/grep root /etc/passwd
+  - /usr/bin/grep -i root /etc/passwd
+  - /usr/bin/grep -v root /etc/passwd
+  - /usr/bin/grep -n root /etc/passwd
+  - /usr/bin/grep -c root /etc/passwd
+  - /usr/bin/grep -l root /etc/passwd
+  - /usr/bin/grep -h root /etc/passwd
+  - /usr/bin/grep -o root /etc/passwd
+  - /usr/bin/grep -w root /etc/passwd
+  - /usr/bin/grep -x root /etc/passwd
+  - /usr/bin/grep -A 1 root /etc/passwd
+  - /usr/bin/grep -B 1 root /etc/passwd
+  - /usr/bin/grep -C 1 root /etc/passwd
+  - /usr/bin/grep bash /etc/passwd
+  - /usr/bin/grep -i bash /etc/passwd
+  - /usr/bin/grep -v bash /etc/passwd
+  - /usr/bin/grep -n bash /etc/passwd
+  - /usr/bin/sort /etc/passwd
+  - /usr/bin/sort -r /etc/passwd
+  - /usr/bin/sort -n /etc/passwd
+  - /usr/bin/sort -u /etc/passwd
+  - /usr/bin/sort -f /etc/passwd
+  - /usr/bin/sort -k 1 /etc/passwd
+  - /usr/bin/sort -k 2 /etc/passwd
+  - /usr/bin/sort -t ':' /etc/passwd
+  - /usr/bin/sort -t ':' -k 1 /etc/passwd
+  - /usr/bin/sort -t ':' -k 3 /etc/passwd
+  - /usr/bin/uniq /etc/passwd
+  - /usr/bin/uniq -c /etc/passwd
+  - /usr/bin/uniq -d /etc/passwd
+  - /usr/bin/uniq -u /etc/passwd
+  - /usr/bin/uniq -i /etc/passwd
+  - /usr/bin/uniq -f 1 /etc/passwd
+  - /usr/bin/uniq -s 1 /etc/passwd
+  - /usr/bin/uniq -w 5 /etc/passwd
+  - /usr/bin/cut -d':' -f1 /etc/passwd
+  - /usr/bin/cut -d':' -f2 /etc/passwd
+  - /usr/bin/cut -d':' -f3 /etc/passwd
+  - /usr/bin/cut -d':' -f1,3 /etc/passwd
+  - /usr/bin/cut -d':' -f1-3 /etc/passwd
+  - /usr/bin/cut -c1-10 /etc/passwd
+  - /usr/bin/cut -c1-5 /etc/passwd
+  - /usr/bin/cut -c10- /etc/passwd
+  - /usr/bin/cut -f1 /etc/passwd
+  - /usr/bin/cut -f1,2 /etc/passwd
+  - /usr/bin/awk '{print $1}' /etc/passwd
+  - /usr/bin/awk '{print $2}' /etc/passwd
+  - /usr/bin/awk '{print $3}' /etc/passwd
+  - /usr/bin/awk '{print NF}' /etc/passwd
+  - /usr/bin/awk '{print NR}' /etc/passwd
+  - /usr/bin/awk -F':' '{print $1}' /etc/passwd
+  - /usr/bin/awk -F':' '{print $3}' /etc/passwd
+  - /usr/bin/awk -F':' '{print $1, $3}' /etc/passwd
+  - /usr/bin/awk 'NR==1 {print}' /etc/passwd
+  - /usr/bin/awk 'NR<=5 {print}' /etc/passwd
+  - /usr/bin/awk 'NF>5 {print}' /etc/passwd
+  - /usr/bin/awk '/root/ {print}' /etc/passwd
+  - /usr/bin/awk '/bash/ {print}' /etc/passwd
+  - /usr/bin/awk 'BEGIN {print "start"}'
+  - /usr/bin/awk 'END {print "end"}' /etc/passwd
+  - /usr/bin/sed 's/root/ROOT/' /etc/passwd
+  - /usr/bin/sed 's/root/ROOT/g' /etc/passwd
+  - /usr/bin/sed 's/:/|/g' /etc/passwd
+  - /usr/bin/sed 's/bash/BASH/' /etc/passwd
+  - /usr/bin/sed 's/[0-9]/X/g' /etc/passwd
+  - /usr/bin/sed 's/^/> /' /etc/passwd
+  - /usr/bin/sed 's/$/END/' /etc/passwd
+  - /usr/bin/sed '1d' /etc/passwd
+  - /usr/bin/sed '2d' /etc/passwd
+  - /usr/bin/sed 's/.*/modified/' /etc/passwd
+  - /usr/bin/sed 'q' /etc/passwd
+  - /usr/bin/sed '5q' /etc/passwd
+  - /usr/bin/sed -n '1p' /etc/passwd
+  - /usr/bin/sed -n '1,5p' /etc/passwd
+  - /usr/bin/sed -e 's/root/ROOT/' -e 's/bash/BASH/' /etc/passwd
+  - /usr/bin/find /etc -name "passwd"
+  - /usr/bin/find /etc -name "host*"
+  - /usr/bin/find /etc -type f -name "*.conf"
+  - /usr/bin/find /etc -type d -name "s*"
+  - /usr/bin/find /etc -maxdepth 1 -name "*.conf"
+  - /usr/bin/find /etc -maxdepth 2 -type f
+  - /usr/bin/find /etc -name "*.conf" -type f
+  - /usr/bin/find /etc -size +1k
+  - /usr/bin/find /etc -size -1k
+  - /usr/bin/find /etc -perm 644
+  - /usr/bin/test -f /etc/passwd
+  - /usr/bin/test -d /etc
+  - /usr/bin/test -r /etc/passwd
+  - /usr/bin/test -w /etc/passwd
+  - /usr/bin/test -x /bin/ls
+  - /usr/bin/test -s /etc/passwd
+  - /usr/bin/test -e /etc/passwd
+  - /usr/bin/test 1 -eq 1
+  - /usr/bin/test 1 -ne 2
+  - /usr/bin/test 1 -lt 2
+  - /usr/bin/test 2 -gt 1
+  - /usr/bin/test 1 -le 1
+  - /usr/bin/test 2 -ge 2
+  - /usr/bin/test "abc" = "abc"
+  - /usr/bin/test "abc" != "def"
+  - /usr/bin/test -z ""
+  - /usr/bin/test -n "string"
+  - /usr/bin/touch $TMPFILE
+  - /bin/rm $TMPFILE
+  - /bin/mkdir $TMPFILE
+  - /bin/rmdir $TMPFILE
+  - /bin/chmod 755 /etc/passwd
+  - /bin/chmod 644 /etc/passwd
+  - /usr/bin/printenv PATH
+  - /usr/bin/printenv HOME
+  - /usr/bin/printenv USER
+  - /usr/bin/which ls
+  - /usr/bin/which cat
+  - /usr/bin/which grep
+  - /usr/bin/whereis ls
+  - /usr/bin/whereis cat

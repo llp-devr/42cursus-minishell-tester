@@ -1,0 +1,21 @@
+commands:
+ - ls krb5cc* ; cd /tmp
+ - ls krb5cc* ; ls krb5cc*
+ - ls tmp*z* ; cd /tmp
+ - ls tmp*z* ; ls tmp*z* | cat -e ; ls tmp*z*
+ - ls *private* ; cd /tmp
+ - ls *private* ; ls *private* | wc -l ; ls *private*
+ - ls lazy* ; cd /tmp
+ - ls lazy* ; ls lazy* | head -1 ; ls lazy*
+ - ls *ssh* ; cd /tmp
+ - ls *ssh* ; cd . ; ls *ssh*
+ - ls systemd* ; cd /tmp
+ - ls systemd* ; cd . ; ls systemd*
+ - ls *service* ; cd /tmp
+ - ls *service* ; cd .. ; ls *service*
+ - ls scoped* ; cd /tmp
+ - ls scoped* ; cd .. ; ls scoped*
+ - ls *snap* ; cd /tmp
+ - ls *snap* ; cd ../.. ; ls *snap*
+ - ls tmp???* ; cd /tmp
+ - ls *a*a*a*a*

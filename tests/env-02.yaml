@@ -1,0 +1,116 @@
+commands:
+  - ls $TFDGSDFBGDHD
+  - pwd ; echo $TFDGSDFBGDHD
+  - whoami ; ls $TFDGSDFBGDHD ; pwd
+  - echo $TFDGSDFBGDHD | wc -l
+  - ls $TFDGSDFBGDHD | cat -e
+  - pwd $TFDGSDFBGDHD | wc -w
+  - whoami | tail -1 ; ls $TFDGSDFBGDHD
+  - echo $TFDGSDFBGDHD | grep test
+  - pwd | echo ; ls $TFDGSDFBGDHD
+  - echo $TFDGSDFBGDHD | tr 'a-z' 'A-Z'
+  - echo $TFDGSDFBGDHD > $DSGDSFGSDF
+  - ls $TFDGSDFBGDHD >> $GFGDSFGSDFGSD
+  - pwd > $FDSGSDFGSD ; echo $FDSGSDFGSD
+  - echo < $TFDGSDFBGDHD ; ls $DSGDSFGSDF
+  - pwd | echo > $TFDGSDFBGDHD
+  - echo $TFDGSDFBGDHD ; pwd
+  - whoami ; echo $TFDGSDFBGDHD ; ls $DSGDSFGSDF
+  - ls ; echo $TFDGSDFBGDHD ; pwd ; whoami
+  - pwd ; cd /tmp ; ls $TFDGSDFBGDHD ; pwd
+  - echo /etc/passwd | head -5 ; ls $TFDGSDFBGDHD
+  - pwd ; cd /tmp ; echo $TFDGSDFBGDHD
+  - pwd ; cd $TFDGSDFBGDHD
+  - pwd ; cd /tmp ; ls $TFDGSDFBGDHD ; pwd
+  - pwd ; cd / ; echo $TFDGSDFBGDHD | cat -e ; pwd
+  - pwd ; cd /home ; whoami $TFDGSDFBGDHD ; pwd
+  - pwd ; cd /usr ; ls $TFDGSDFBGDHD ; pwd
+  - pwd ; cd /tmp ; echo $TFDGSDFBGDHD | head -1 ; pwd
+  - pwd ; cd /var ; whoami $TFDGSDFBGDHD ; pwd
+  - cd $TFDGSDFBGDHD/nonexistent ; pwd
+  - echo $TFDGSDFBGDHD | echo | grep -v test | wc -l
+  - whoami $TFDGSDFBGDHD > /tmp/test ; echo /tmp/test | wc -w
+  - ls hello $TFDGSDFBGDHD world | tr 'a-z' 'A-Z' | cat -e
+  - echo $TFDGSDFBGDHD ; ls | head -3 ; whoami $DSGDSFGSDF
+  - ls $TFDGSDFBGDHD | echo | echo | echo | wc -c
+  - pwd ; cd /tmp ; whoami $TFDGSDFBGDHD | echo > test ; echo test ; rm test
+  - ls $TFDGSDFBGDHD/nonexistent
+  - echo $TFDGSDFBGDHD/file.txt
+  - cd $TFDGSDFBGDHD/directory
+  - cp $TFDGSDFBGDHD $DSGDSFGSDF
+  - mv $TFDGSDFBGDHD $GFGDSFGSDFGSD
+  - rm $TFDGSDFBGDHD
+  - chmod +x $TFDGSDFBGDHD
+  - grep pattern $TFDGSDFBGDHD
+  - head $TFDGSDFBGDHD
+  - tail $TFDGSDFBGDHD
+  - wc $TFDGSDFBGDHD
+  - ls $TFDGSDFBGDHD$DSGDSFGSDF
+  - echo ${TFDGSDFBGDHD}
+  - whoami $TFDGSDFBGDHD/$DSGDSFGSDF
+  - pwd '$TFDGSDFBGDHD is not expanded'
+  - ls $TFDGSDFBGDHD$HOME$DSGDSFGSDF
+  - echo $HOME$TFDGSDFBGDHD$USER
+  - ls $TFDGSDFBGDHD | grep $DSGDSFGSDF
+  - echo $TFDGSDFBGDHD | echo > /tmp/test ; echo /tmp/test | wc -l
+  - whoami $TFDGSDFBGDHD | tee /tmp/output | cat -e
+  - pwd ; echo $TFDGSDFBGDHD | echo | wc -c > $FDSGSDFGSD
+  - ls $TFDGSDFBGDHD | echo | head -n 1 | cat -e
+  - whoami $TFDGSDFBGDHD | echo | tr 'a-z' 'A-Z' > $DSGDSFGSDF
+  - cd $TFDGSDFBGDHD
+  - pwd ; ls $TFDGSDFBGDHD
+  - export TESTVAR=$TFDGSDFBGDHD ; echo $TESTVAR
+  - unset TFDGSDFBGDHD ; whoami $TFDGSDFBGDHD
+  - env | grep $TFDGSDFBGDHD
+  - which $TFDGSDFBGDHD
+  - type $TFDGSDFBGDHD
+  - history | grep $TFDGSDFBGDHD
+  - ls $TFDGSDFBGDHD | sort
+  - echo $TFDGSDFBGDHD | uniq
+  - whoami $TFDGSDFBGDHD | rev
+  - ls $TFDGSDFBGDHD | wc -l
+  - find /tmp -name $TFDGSDFBGDHD
+  - touch $TFDGSDFBGDHD ; ls $TFDGSDFBGDHD ; rm $TFDGSDFBGDHD
+  - mkdir $TFDGSDFBGDHD ; ls -d $TFDGSDFBGDHD ; rmdir $TFDGSDFBGDHD
+  - ls $TFDGSDFBGDHD | awk '{print $1}'
+  - echo $TFDGSDFBGDHD | sed 's/a/b/g'
+  - printf "%s\n" $TFDGSDFBGDHD
+  - test -z $TFDGSDFBGDHD ; whoami $?
+  - ls $TFDGSDFBGDHD | xargs cat
+  - whoami $TFDGSDFBGDHD | column -t
+  - ls $TFDGSDFBGDHD | expand
+  - echo $TFDGSDFBGDHD | unexpand
+  - whoami $TFDGSDFBGDHD | fmt
+  - ls $TFDGSDFBGDHD | nl
+  - echo $TFDGSDFBGDHD | paste -
+  - whoami $TFDGSDFBGDHD | join - /dev/null
+  - ls $TFDGSDFBGDHD | diff - /dev/null
+  - echo $TFDGSDFBGDHD | cmp - /dev/null
+  - whoami $TFDGSDFBGDHD | md5sum
+  - ls $TFDGSDFBGDHD | base64
+  - echo $TFDGSDFBGDHD | hexdump -C
+  - whoami $TFDGSDFBGDHD | od -c
+  - ls $TFDGSDFBGDHD | file -
+  - echo $TFDGSDFBGDHD | wc -c
+  - whoami $TFDGSDFBGDHD | wc -w
+  - ls $TFDGSDFBGDHD | tr -d '\n'
+  - echo $TFDGSDFBGDHD | tr ' ' '_'
+  - whoami $TFDGSDFBGDHD | tr '[a-z]' '[A-Z]'
+  - ls $TFDGSDFBGDHD | tr -c 'a-z' '*'
+  - echo $TFDGSDFBGDHD | head -c 10
+  - whoami $TFDGSDFBGDHD | tail -c 10
+  - ls $TFDGSDFBGDHD | uniq -c
+  - echo $TFDGSDFBGDHD | uniq -d
+  - whoami $TFDGSDFBGDHD | uniq -u
+  - ls > $DSGDSFGSDF
+  - pwd | echo > $GFGDSFGSDFGSD
+  - whoami | head -1 > $FDSGSDFGSD
+  - ls /tmp | wc -l > $TFDGSDFBGDHD
+  - pwd | tr 'a-z' 'A-Z' > $DSGDSFGSDF
+  - whoami | uniq > $FDSGSDFGSD
+  - ls | rev > $GFGFDGSDGSDF
+  - pwd | cut -c1-5 > $TFDGSDFBGDHD
+  - whoami | sed 's/a/b/g' > $GFGDSFGSDFGSD
+  - ls | head -n 1 > $FDSGSDFGSD
+  - pwd | tail -n 1 > $GFGFDGSDGSDF
+  - ls | uniq -c > $GFGDSFGSDFGSD

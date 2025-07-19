@@ -1,0 +1,167 @@
+commands:
+  - echo hello > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - pwd > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - whoami > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "test content" > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - echo "line1 line2 line3" > $TMPFILE
+  - wc -w < $TMPFILE
+  - rm $TMPFILE
+  - wc -w < $TMPFILE
+  - echo "count these words" > $TMPFILE
+  - wc < $TMPFILE
+  - rm $TMPFILE
+  - wc < $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo line1 >> $TMPFILE
+  - echo line2 >> $TMPFILE
+  - echo line3 >> $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - cat /etc/passwd > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - head -5 /etc/passwd > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - tail -3 /etc/passwd > $TMPFILE
+  - wc -l < $TMPFILE
+  - rm $TMPFILE
+  - wc -l < $TMPFILE
+  - echo start > $TMPFILE
+  - cat $TMPFILE
+  - echo overwrite > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo base > $TMPFILE
+  - cat < $TMPFILE
+  - echo new > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - cat /etc/passwd | head -3 > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "pipe test" | cat > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - cat /etc/passwd | grep root > $TMPFILE
+  - wc -l < $TMPFILE
+  - rm $TMPFILE
+  - wc -l < $TMPFILE
+  - awk 'NR<=3 {print $0}' /etc/passwd > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - echo "field1 field2 field3" > $TMPFILE
+  - awk '{print $2}' < $TMPFILE
+  - rm $TMPFILE
+  - awk '{print $2}' < $TMPFILE
+  - grep bash /etc/passwd > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "search this text" > $TMPFILE
+  - grep "search" < $TMPFILE
+  - rm $TMPFILE
+  - grep "search" < $TMPFILE
+  - echo "" > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - cat /dev/null > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - cat /etc/passwd > $TMPFILE
+  - wc -l $TMPFILE
+  - rm $TMPFILE
+  - wc -l $TMPFILE
+  - seq 1 100 > $TMPFILE
+  - tail -5 < $TMPFILE
+  - rm $TMPFILE
+  - tail -5 < $TMPFILE
+  - echo "quoted content" > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - echo 'single quotes here' > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo test1 > $TMPFILE
+  - cat $TMPFILE
+  - echo test2 > $TMPFILE
+  - cat < $TMPFILE
+  - echo test3 >> $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "text content" > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "data content" > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - echo content > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo content > $TMPFILE
+  - cat < $TMPFILE
+  - rm $TMPFILE
+  - cat < $TMPFILE
+  - echo start > $TMPFILE
+  - cat $TMPFILE >> $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo base > $TMPFILE
+  - cat < $TMPFILE > $TMPFILE
+  - cat $TMPFILE
+  - rm $TMPFILE
+  - cat $TMPFILE
+  - echo "word count test" > $TMPFILE
+  - wc -w < $TMPFILE
+  - rm $TMPFILE
+  - wc -w < $TMPFILE
+  - cat /etc/passwd > $TMPFILE
+  - head -2 < $TMPFILE
+  - rm $TMPFILE
+  - head -2 < $TMPFILE
+  - cat /etc/passwd > $TMPFILE
+  - tail -2 < $TMPFILE
+  - rm $TMPFILE
+  - tail -2 < $TMPFILE
+  - echo "c b a" > $TMPFILE
+  - sort < $TMPFILE
+  - rm $TMPFILE
+  - sort < $TMPFILE
+  - echo "field1xfield2xfield3" > $TMPFILE
+  - cut -dx -f2 < $TMPFILE
+  - rm $TMPFILE
+  - cut -dx -f2 < $TMPFILE
+  - echo "mixed content" > $TMPFILE
+  - cat $TMPFILE | wc -c
+  - rm $TMPFILE
+  - cat $TMPFILE

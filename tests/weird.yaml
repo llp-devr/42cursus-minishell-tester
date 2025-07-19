@@ -1,0 +1,78 @@
+commands:
+ - echo hello | cat | cat | cat | cat | cat
+ - ls | head -1 | wc -c
+ - echo "test" > file1 && cat file1 | tr 'a-z' 'A-Z' > file2 && cat file2
+ - pwd | rev
+ - echo $HOME | cut -d'/' -f2
+ - cat /etc/passwd | grep root | cut -d':' -f1
+ - echo "a b c" | tr ' ' '\n' | sort -r
+ - ls -la | tail -5 | head -1
+ - echo $PATH | tr ':' '\n' | wc -l
+ - whoami | tr 'a-z' 'A-Z' | rev
+ - echo "hello world" | sed 's/world/universe/'
+ - ls | grep "^[aeiou]"
+ - echo "test123" | tr -d '0-9'
+ - cat /etc/hosts | head -3 | tail -1
+ - echo $USER | wc -c
+ - ls -1 | sort | uniq -c
+ - echo "HELLO" | tr 'A-Z' 'a-z' | wc -w
+ - pwd | basename
+ - echo "a:b:c:d" | cut -d':' -f3
+ - ls | xargs echo
+ - seq 1 5 | paste -s -d'+'
+ - echo "test" | tee output.txt | wc -c
+ - ls -la | awk '{print $1}' | head -5
+ - echo "hello" | hexdump -C | head -1
+ - echo "test" | od -c | head -1
+ - ps aux | head -1
+ - echo $SHELL | basename
+ - ls | head -3 | tail -1
+ - echo "a\nb\nc" | sort -r
+ - echo $GFGSDFGSDFGS
+ - echo $GFGSDFGSDFGS | wc -c
+ - echo "$GFGSDFGSDFGS"
+ - echo hello$GFGSDFGSDFGS
+ - echo $GFGSDFGSDFGSworld
+ - echo $GFGSDFGSDFGS$HOME
+ - echo $HOME$GFGSDFGSDFGS
+ - echo "$GFGSDFGSDFGS$USER"
+ - echo $GFGSDFGSDFGS | cat
+ - echo $GFGSDFGSDFGS > testfile && cat testfile
+ - ls $GFGSDFGSDFGS
+ - cat $GFGSDFGSDFGS fds fsd
+ - echo $GFGSDFGSDFGS | grep something
+ - echo test$GFGSDFGSDFGS$PATH
+ - echo $GFGSDFGSDFGS$GFGSDFGSDFGS
+ - echo "$GFGSDFGSDFGS and $HOME"
+ - echo prefix$GFGSDFGSDFGSsuffix
+ - echo $GFGSDFGSDFGS$GFGSDFGSDFGS$GFGSDFGSDFGS
+ - cd $GFGSDFGSDFGS
+ - pwd && echo $GFGSDFGSDFGS
+ - echo $GFGSDFGSDFGS | tr 'a-z' 'A-Z'
+ - ls$GFGSDFGSDFGS
+ - cat$GFGSDFGSDFGS fsdf gd
+ - echo$GFGSDFGSDFGS hello
+ - pwd$GFGSDFGSDFGS
+ - whoami$GFGSDFGSDFGS
+ - echo hello | cat$GFGSDFGSDFGS
+ - ls | head$GFGSDFGSDFGS -1
+ - echo test | tr$GFGSDFGSDFGS 'a-z' 'A-Z'
+ - cat /etc/passwd | grep$GFGSDFGSDFGS root
+ - echo hello | wc$GFGSDFGSDFGS -c
+ - ls -la | tail$GFGSDFGSDFGS -5
+ - echo test | sort$GFGSDFGSDFGS
+ - pwd | basename$GFGSDFGSDFGS
+ - echo hello | cat | wc$GFGSDFGSDFGS -l
+ - ls | grep$GFGSDFGSDFGS test
+ - echo test | tr 'a-z' 'A-Z' | cat$GFGSDFGSDFGS
+ - cat$GFGSDFGSDFGS /etc/hosts | head -1
+ - echo$GFGSDFGSDFGS hello | cat
+ - ls$GFGSDFGSDFGS -la | head -3
+ - echo hello | sed$GFGSDFGSDFGS 's/hello/hi/'
+ - cat /etc/passwd | cut$GFGSDFGSDFGS -d':' -f1
+ - echo test | hexdump$GFGSDFGSDFGS -C
+ - ls | xargs$GFGSDFGSDFGS echo
+ - echo hello | rev$GFGSDFGSDFGS
+ - echo hello | $GFGSDFGSDFGS cat
+ - echo test | $GFGSDFGSDFGS -la
+ - pwd | $GFGSDFGSDFGS arg1 arg2 | cat

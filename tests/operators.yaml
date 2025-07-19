@@ -1,0 +1,120 @@
+commands:
+  - echo first ; echo second
+  - pwd ; whoami
+  - echo test ; echo result
+  - ls ; pwd ; whoami
+  - echo one ; echo two ; echo three
+  - cat /etc/passwd ; echo done
+  - echo start ; cat /dev/null ; echo end
+  - /bin/true ; echo after true
+  - /bin/false ; echo after false
+  - echo hello ; echo world ; echo !
+  - /bin/true && echo success
+  - /bin/false && echo should not print
+  - echo test && echo next
+  - pwd && echo pwd worked
+  - whoami && echo user found
+  - cat /etc/passwd && echo file exists
+  - ls /etc && echo etc directory exists
+  - test -f /etc/passwd && echo passwd file found
+  - echo hello && echo world
+  - /bin/true && /bin/true && echo all true
+  - /bin/true || echo should not print
+  - /bin/false || echo this prints
+  - test -f /nonexistent || echo file not found
+  - cat /nonexistent/file || echo cat failed
+  - /bin/false || echo backup command
+  - ls /nonexistent || echo ls failed
+  - grep nonexistent /etc/passwd || echo grep found nothing
+  - /bin/false || /bin/false || echo final fallback
+  - echo test || echo should not print
+  - /bin/true || echo should not execute
+  - /bin/true && echo first || echo second
+  - /bin/false && echo first || echo second
+  - /bin/true || echo first && echo second
+  - /bin/false || echo first && echo second
+  - echo test && /bin/true || echo fallback
+  - echo test && /bin/false || echo fallback
+  - /bin/false && echo hidden || /bin/true && echo visible
+  - /bin/true && /bin/false || echo rescue
+  - /bin/false || /bin/true && echo works
+  - /bin/true && /bin/true || echo never
+  - echo start ; /bin/true && echo success
+  - echo start ; /bin/false && echo fail
+  - /bin/true && echo good ; echo always
+  - /bin/false && echo bad ; echo always
+  - echo begin ; /bin/true || echo backup ; echo end
+  - echo begin ; /bin/false || echo backup ; echo end
+  - /bin/true ; /bin/false && echo hidden ; echo shown
+  - /bin/false ; /bin/true && echo shown ; echo always
+  - echo one ; echo two && echo three
+  - echo a ; /bin/true && echo b ; echo c
+  - /bin/true && /bin/true && echo all success
+  - /bin/true && /bin/false && echo should not print
+  - /bin/false && /bin/true && echo should not print
+  - /bin/false && /bin/false && echo should not print
+  - /bin/true || /bin/true || echo should not print
+  - /bin/true || /bin/false || echo should not print
+  - /bin/false || /bin/true || echo should not print
+  - /bin/false || /bin/false || echo all failed
+  - /bin/true && echo step1 && echo step2
+  - /bin/false || echo backup1 || echo backup2
+  - test -f /etc/passwd && echo passwd exists
+  - test -f /nonexistent && echo should not print
+  - test -d /etc && echo etc is directory
+  - test -d /nonexistent && echo should not print
+  - cat /etc/passwd > /dev/null && echo cat succeeded
+  - cat /nonexistent || echo cat failed
+  - ls /etc > /dev/null && echo ls worked
+  - ls /nonexistent || echo ls failed
+  - head -1 /etc/passwd && echo head worked
+  - echo test | cat && echo pipe worked
+  - echo test | grep test && echo found
+  - echo test | grep missing || echo not found
+  - cat /etc/passwd | head -1 && echo pipeline ok
+  - echo failure | grep success || echo pipeline failed
+  - ls | head -5 && echo ls pipe worked
+  - echo data | wc -w && echo count worked
+  - echo text | cat | cat && echo multi pipe
+  - /bin/false | echo test && echo should not print
+  - /bin/true | echo test || echo should not print
+  - /bin/true && echo exit 0 works
+  - /bin/false || echo exit 1 works
+  - grep root /etc/passwd && echo grep found root
+  - grep nonexistent /etc/passwd || echo grep found nothing
+  - test 1 -eq 1 && echo math works
+  - test 1 -eq 2 || echo math failed
+  - echo success && /bin/true && echo chain success
+  - echo test && /bin/false || echo recovered
+  - /bin/true && echo ok || echo never
+  - /bin/false && echo never || echo always
+  - echo test > $TMPFILE && cat $TMPFILE
+  - echo data > $TMPFILE && rm $TMPFILE
+  - cat /nonexistent > $TMPFILE || echo redirect failed
+  - echo content > $TMPFILE && wc < $TMPFILE
+  - /bin/false > $TMPFILE || echo output redirect with false
+  - echo append >> $TMPFILE && cat $TMPFILE
+  - cat /etc/passwd > $TMPFILE && head -1 $TMPFILE
+  - echo line1 > $TMPFILE && echo line2 >> $TMPFILE && cat $TMPFILE
+  - rm $TMPFILE ; echo removed || echo was not there
+  - touch $TMPFILE && test -f $TMPFILE && rm $TMPFILE
+  - command_not_found && echo should not print
+  - command_not_found || echo command failed
+  - echo test && command_not_found || echo recovered
+  - /bin/true && command_not_found || echo still recovered
+  - command_not_found && echo hidden || command_not_found2 || echo final
+  - echo start && unknown_cmd && echo hidden ; echo always shown
+  - /bin/false && bad_command || echo fallback works
+  - good_command || echo should not execute && echo conditional
+  - echo test ; bad_command ; echo after bad command
+  - unknown && echo never || echo fallback && echo continues
+  - /bin/true && /bin/true && /bin/true && echo long success chain
+  - /bin/false || /bin/false || /bin/false || echo long failure chain
+  - echo 1 && echo 2 && echo 3 && echo 4 && echo 5
+  - /bin/false || echo a || echo b || echo c || echo d
+  - /bin/true ; /bin/false ; /bin/true ; /bin/false ; echo mixed chain
+  - echo step1 && echo step2 || echo fallback && echo step3
+  - /bin/false || echo backup1 && echo backup2 || echo backup3
+  - /bin/true && echo good1 ; /bin/false || echo good2 ; echo always
+  - echo start ; /bin/true && /bin/false || echo middle ; echo end
+  - /bin/true && echo a ; /bin/true && echo b ; /bin/true && echo c
