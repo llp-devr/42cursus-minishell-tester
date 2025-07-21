@@ -1,220 +1,643 @@
 commands:
- - pwd ; cd /tmp
- - pwd ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd | cat -e ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd | wc -l ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd | head -1 ; pwd
- - pwd ; cd /tmp
- - pwd ; cd . ; pwd
- - pwd ; cd /tmp
- - pwd ; cd . ; pwd
- - pwd ; cd /tmp
- - pwd ; cd .. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd .. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ../.. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ../.. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ../../.. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ../../.. ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; cd .. ; pwd ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; cd .. ; pwd ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; cd ../.. ; pwd ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /usr ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /usr ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /home ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /home ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ; pwd
- - pwd ; cd /tmp
- - pwd ; cd $HOME ; pwd
- - pwd ; cd /tmp
- - pwd ; cd $HOME ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ${HOME} ; pwd
- - pwd ; cd /tmp
- - pwd ; cd ${HOME} ; pwd
- - pwd ; cd /tmp
- - pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd .. ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd .. ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; cd / ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; cd /tmp ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; pwd ; pwd
- - pwd ; cd / ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /etc ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /dev ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /mnt ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd - ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd - ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; cd - ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd tmp ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd usr ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /usr ; cd .. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /usr ; cd ../tmp ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /nonexistent ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /nonexistent ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /nonexistent ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd nonexistent_dir ; pwd
- - pwd ; cd /tmp
- - pwd ; cd nonexistent_dir ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / /tmp ; pwd
- - pwd ; cd /tmp
- - pwd ; cd . .. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd " " ; pwd
- - pwd ; cd /tmp
- - pwd ; cd " " ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "/" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "/" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd '/tmp' ; pwd
- - pwd ; cd /tmp
- - pwd ; cd '/tmp' ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "$HOME" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd "$HOME" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd '$HOME' ; pwd
- - pwd ; cd /tmp
- - pwd ; cd '$HOME' ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd tmp ; cd .. ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd tmp ; cd .. ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd tmp ; cd .. ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; env | grep pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; env | grep pwd
- - pwd ; cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd | cat -e
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd | wc -l
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd | head -1
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd .
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd .
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ../..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ../..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ../../..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ../../..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd ..
+ - pwd
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd ..
+ - pwd
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd ../..
+ - pwd
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /usr
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /usr
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /home
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /home
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd $HOME
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd $HOME
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ${HOME}
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ${HOME}
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ..
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ..
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd /
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - pwd
+ - pwd
+ - pwd
+ - cd /
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /etc
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /dev
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /mnt
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd -
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd -
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - cd -
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd usr
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /usr
+ - cd ..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /usr
+ - cd ../tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /nonexistent
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /nonexistent
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /nonexistent
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd nonexistent_dir
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd nonexistent_dir
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd / /tmp
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd . ..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ""
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd ""
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd " "
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd " "
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd "/"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd "/"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd '/tmp'
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd '/tmp'
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd "$HOME"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd "$HOME"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd '$HOME'
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd '$HOME'
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd tmp
+ - cd ..
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd tmp
+ - cd ..
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd tmp
+ - cd ..
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - env | grep pwd
+ - pwd
+ - cd /tmp
  - ls | sort
- - pwd ; cd /tmp ; env | grep pwd
- - pwd ; cd /tmp
- - pwd ; env | grep OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; env | grep OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; env | grep OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp
- - pwd ; cd /tmp
- - pwd ; pwd | cat ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd | cat ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd | cat ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd | grep "/" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd | wc -c ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd | wc -c ; pwd
- - pwd ; cd /tmp
+ - pwd
+ - cd /tmp
+ - env | grep pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - env | grep OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - env | grep OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd | cat
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd | cat
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd | cat
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd | grep "/"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd | wc -c
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd | wc -c
+ - pwd
+ - pwd
+ - cd /tmp
  - ls | sort
- - pwd ; cd / && pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp && pwd
- - pwd ; cd /tmp
- - pwd ; cd nonexistent || pwd
- - pwd ; cd /tmp
- - pwd ; cd /nonexistent || echo "Failed to cd" ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / && env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp && env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
+ - pwd
+ - cd / && pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp && pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd nonexistent || pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /nonexistent || echo "Failed to cd"
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd / && env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp && env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
  - ls | sort
- - pwd ; cd .. ; pwd ; env | grep ^PWD ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /tmp ; pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd /var ; pwd ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; cd - ; cd - ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; cd - ; cd - ; env | grep ^PWD ; pwd
- - pwd ; cd /tmp
- - pwd ; cd / ; cd /tmp ; cd /usr ; cd - ; cd - ; env | grep ^OLDPWD ; pwd
- - pwd ; cd /tmp
- - pwd ; pwd ; export CURRENT_PWD=$PWD ; cd / ; env | grep ^CURRENT_PWD ; pwd
- - pwd ; cd /tmp
+ - pwd
+ - cd ..
+ - pwd
+ - env | grep ^PWD
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /tmp
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /var
+ - pwd
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - cd -
+ - cd -
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - cd -
+ - cd -
+ - env | grep ^PWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - cd /
+ - cd /tmp
+ - cd /usr
+ - cd -
+ - cd -
+ - env | grep ^OLDPWD
+ - pwd
+ - pwd
+ - cd /tmp
+ - pwd
+ - pwd
+ - export CURRENT_PWD=$PWD
+ - cd /
+ - env | grep ^CURRENT_PWD
+ - pwd
+ - pwd
+ - cd /tmp
